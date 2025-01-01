@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Hospital Management System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero">
+            <h2>Welcome to the Hospital Management System</h2>
+            <p>Efficient, streamlined healthcare management at your fingertips.</p>
+            <a href="/about" class="btn">Learn More</a>
+        </section>
+
+        <section class="features">
+            <h3 class="txtt">Our Features</h3>
+            <div class="feature-list">
+                <div class="feature-item">
+                    <h4>Patient Management</h4>
+                    <p>Manage patient records, appointments, and treatment plans seamlessly.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Staff Management</h4>
+                    <p>Efficiently manage hospital staff, schedules, and payroll.</p>
+                </div>
+                <div class="feature-item">
+                    <h4>Billing & Accounting</h4>
+                    <p>Integrated billing and accounting system for financial tracking.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hospital Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Hospital Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='gallery.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Hospital Management System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/gallery" class="active">Gallery</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero">
+            <h2>Our Gallery</h2>
+            <p>Explore the images of our hospital, facilities, and services.</p>
+        </section>
+
+        <section class="gallery">
+            <h3>Hospital Photos</h3>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://www.tokushima-hosp.jp/en/images/about/gallery-001.jpg" alt="Hospital Image 1">
+                    <p>Hospital Entrance</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9zcGl0YWx8ZW58MHx8MHx8fDA%3D" alt="Hospital Image 2">
+                    <p>Patient Care Room</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://qbdgroup.com/wp-content/uploads/Qualification-of-laboratory-equipment-key-considerations-and-challenges-QbD-Group.jpg" alt="Hospital Image 3">
+                    <p>Laboratory Facilities</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://advinhealthcare.com/wp-content/uploads/2022/12/Modular-Operation-Theatre-5-1024x683.jpg" alt="Hospital Image 4">
+                    <p>Operating Theater</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://www.owensborohealth.org/sites/default/files/inline/8d/emergency-room-room-web-banner.jpg" alt="Hospital Image 5">
+                    <p>Emergency Room</p>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://d1i4t8bqe7zgj6.cloudfront.net/03-10-2017/t_1489165372685_name_doctors1.jpg" alt="Hospital Image 6">
+                    <p>Doctors at Work</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hospital Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

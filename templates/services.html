@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Hospital Management System</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='services.css') }}">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>Hospital Management System</h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/services" class="active">Services</a></li>
+                    <li><a href="/gallery">Gallery</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/login">Login</a></li>
+                    <li><a href="/register">Registration</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Section -->
+    <main>
+        <section class="hero">
+            <h2>Our Services</h2>
+            <p>We provide comprehensive healthcare solutions to meet your needs.</p>
+        </section>
+
+        <section class="services">
+            <h3>What We Offer</h3>
+            <div class="service-list">
+                <div class="service-item">
+                    <h4>Emergency Care</h4>
+                    <p>24/7 emergency services with experienced medical staff to handle critical situations.</p>
+                </div>
+                <div class="service-item">
+                    <h4>General Surgery</h4>
+                    <p>Our expert surgeons are available for various general surgical procedures, ensuring quality care.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Laboratory Services</h4>
+                    <p>Comprehensive diagnostic tests including blood work, imaging, and more.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Maternal & Child Health</h4>
+                    <p>High-quality prenatal and postnatal care, as well as pediatric care for newborns and children.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Cardiology</h4>
+                    <p>Expert cardiologists for diagnosing and treating heart diseases with advanced technologies.</p>
+                </div>
+                <div class="service-item">
+                    <h4>Orthopedic Care</h4>
+                    <p>Specialized care for bone and joint conditions, from injury treatment to surgery and rehabilitation.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Hospital Management System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

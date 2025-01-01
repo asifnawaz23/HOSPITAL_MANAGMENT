@@ -1,0 +1,150 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Section */
+header {
+    background-color: #2a3d8e;
+    color: white;
+    padding: 20px 0;
+}
+
+header .container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2em;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+header nav ul li a.active {
+    text-decoration: underline;
+    color: #ff5722; /* Highlight the current page */
+}
+
+/* Main Content */
+main {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.hero {
+    background-color: #3e8e41;
+    color: white;
+    padding: 50px 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 25px;
+}
+
+/* Services Section */
+.services {
+    margin-top: 50px;
+    padding: 0 10%; /* Optional: To give some padding on the sides */
+}
+
+.services h3 {
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal columns */
+    gap: 30px;
+}
+
+.service-item {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    min-width: 280px; /* Ensure cards don’t become too small */
+}
+
+.service-item h4 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.service-item p {
+    font-size: 1em;
+}
+
+/* Footer Section */
+footer {
+    background-color: #2a3d8e;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .footer-content {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .service-list {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-list {
+        grid-template-columns: 1fr; /* 1 column on small screens */
+    }
+
+    .hero h2 {
+        font-size: 2em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+}
